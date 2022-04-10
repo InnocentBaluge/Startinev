@@ -4,11 +4,10 @@
     padding: 0px;
   }
 
-  
-  #menu{
+  .nav-item{
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 16px;
     line-height: 22px;
 
@@ -179,4 +178,24 @@ color: #1E90FF;
     letter-spacing: -0.02em;
     color: #122742;
 }
+
+.col-md-3
+{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#socials
+{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+
   

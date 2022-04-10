@@ -24,7 +24,9 @@
         <link href="css/styles.css" rel="stylesheet">
         <!--Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!--fonts awesome-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Javascript-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -32,44 +34,54 @@
       
     <body>
         <!--Navigation bar------------>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"><img src="images/Logo.png" width="170px" height="52.03px" alt="Startinev_logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+            <div class="container">
+
+                <!-- Image Logo -->
+                <a class="navbar-brand logo-image" href="index.html"><img src="images/Logo.png" alt="Startinev logo"></a> 
+
+                <!-- Text Logo - Use this if you don't have a graphic logo -->
+
+                <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse " id="navbarText">
-                <ul class="navbar-nav mr-auto" id="menu">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#">Home </span></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Community</a>
-                    </li>
-                    <li class="nav-item">
-                        <span id=cta><a type="button" href="#" id="get_in-touch" style="color: white !important;"> Get in touch</a></span>
-                    </li>
 
-                </ul>
-                </div>
-            </nav>
-        </div>
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                        
+                        <li class="nav-item ">
+                            <a class="nav-link  links" href="#" aria-expanded="false">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link links" target="_blank" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link links" target="_blank" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link links" target="_blank" href="#">Community</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary" href="#" id="join_us" 
+                            style="color: white !important; font-family: 'Open Sans'; font-style: normal;font-weight: 500;background: #1E90FF;padding: 10px;width: 150px;
+                            height: 42px;border-radius: 8px;">
+                            Get in touch
+                        </a>
+                        </li>
 
+                    </ul>
+                </div> <!-- end of navbar-collapse -->
+            </div> <!-- end of container -->
+        </nav> <!-- end of navbar -->
         <!--------------------------------------->
         <div class="container" >
             <div class="row">
                 <div class="col-lg-5" >
                     <div class="text-container" style="margin-top: 85px;">
-                        <h2 style="font-family: 'Open Sans';font-style: normal;font-weight: 400;font-size: 50px;line-height: 120%;color: #1E90FF;letter-spacing: -0.03em;">
+                        <h2 id="hero_header" style="font-family: 'Open Sans';font-style: normal;font-weight: 400;font-size: 50px;line-height: 120%;color: #1E90FF;letter-spacing: -0.03em;">
                             Enabling Innovators
                         </h2>
-                        <p style="color:#0A448A;font-family:'Open Sans';font-style: normal;font-weight: 400; font-size: 16px;line-height: 170%;">
+                        <p  id="hero_message" style="color:#0A448A;font-family:'Open Sans';font-style: normal;font-weight: 400; font-size: 16px;line-height: 170%;">
                             Startinev is a one stop enterprise innovation hub for startups.<br>
                             We provide value driven solutions for early stage startups by facilitating business development, opportunities matching,
                             growth support, business incubation, funding opportunities,
@@ -84,17 +96,17 @@
 
                 <div class="col-lg-7">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/hero_shot.png"  alt="Startinev ">
+                        <img id="hero_shot" class="img-fluid" src="images/hero_shot.png"  alt="Startinev ">
                     </div> <!-- end of image-container -->
                 </div><!--end of col-->
 
                 <div class="partners" > 
                     <p class="" style="font-family: 'Open Sans';color: #122742;">Our Partners:</p>
                     <div class="row images">
-                        <img src="images/ada labs logo 1.webp" onClick="window.open('https://www.adanianlabs.io/')" class="col-lg-1" alt="adenian labs logo">
+                        <img src="images/ada labs logo 1.webp" style="height: 41px;width: 139px;" onClick="window.open('https://www.adanianlabs.io/')" class="col-lg-1" alt="adenian labs logo">
                         <img class="img3" style="height: 41px;width: 139px;"src="images/Logo.png" onClick="window.open('https://startinev.com/')" class="col-lg-1" alt="Startinev logo">
                         <img class="img2" style="height: 41px;width: 139px;" src="images/Africahackon brand strip-02.png" onClick="window.open('https://conference.africahackon.com/')" class="col-lg-1" alt="Africahackon logo">
-                        <img src="images/ada labs logo 1.webp" onClick="window.open('https://www.adanianlabs.io/')" class="col-lg-1" alt="adenian labs logo">
+                        <img src="images/ada labs logo 1.webp" style="height: 41px;width: 139px;" onClick="window.open('https://www.adanianlabs.io/')" class="col-lg-1" alt="adenian labs logo">
                         <img class="img3" style="height: 41px;width: 139px;"src="images/Logo.png" onClick="window.open('https://startinev.com/')" class="col-lg-1" alt="Startinev logo">
                         <img class="img2" style="height: 41px;width: 139px;" src="images/Africahackon brand strip-02.png" onClick="window.open('https://conference.africahackon.com/')" class="col-lg-1" alt="Africahackon logo">
                     </div> <!--end of row images-->
@@ -255,6 +267,68 @@
             </div> <!-- end of container -->
         </div> <!-- end of basic-3 -->
         <!-- end of invitation -->
+
+        <div class="container">
+            <div row>
+                <form class="form-inline" action="" style="background: #C4C4C4;border-radius: 4.59762px;padding: 37px 37px 32px;">
+                    <div class="form-group" style="margin-right: 20px;">
+                        <p style="font-family: 'Open Sans';font-size: 16px;"><b>Stay updated</b><br>
+                            <span style="font-family: 'Open Sans';font-size: 14px;">Receive startinev updates in your inbox </span>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="pwd" placeholder="First Name" name="first_name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="pwd" placeholder="Last Name" name="last_name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="pwd" placeholder="Email" name="email">
+                    </div>
+                    <button type="submit" class="btn btn-default" style="background: #122742; border-radius: 8px;color: white;font-family: 'Open Sans';font-style: normal;font-weight: 400;font-size: 14px;">Sign up</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <section class="footer" style="background-color: #C4C4C4; margin-top: 50px;padding-top: 50px;">
+            <div class="container text-left">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="images/Logo.png">
+                    </div>
+                    <div class="col-md-3">
+                        <a href="" style="color: #000000!important;"><p>About us</p></a>
+                        <a href="" style="color: #000000!important;"><p>Our team</p></a>
+                        <a href="" style="color: #000000!important;"><p>Community</p></a>
+                        <a href="" style="color: #000000!important;"><p>Events</p></a>
+                      
+                    </div>
+                    <div class="col-md-3">
+                        <a href="" style="color: #000000!important;"><p>Our partners</p></a>
+                        <a href="" style="color: #000000!important;"><p>Mission</p></a>
+                        <a href="" style="color: #000000!important;"><p>Vision</p></a>
+                        <a href="" style="color: #000000!important;"><p>Media</p></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="" style="color: #000000!important;"><p>contact us</p></a>
+                        <a href="" style="color: #000000!important;"><p>hello@startinev.com</p></a>
+                        <a href="" style="color: #000000!important;"><p>+254 721617364</p></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <p id="socials"><a href="#" style="color: #000000 !important;margin-right: 20px;"><i class="fa fa-facebook-official" ></i> Facebook</a>
+                    <a href="#" style="color: #000000 !important;margin-right: 20px;"><i class="fa fa-instagram" ></i> Instagram</a>
+                    <a href="#" style="color: #000000 !important;margin-right: 20px;"><i class="fa fa-twitter" ></i> twitter</a>
+                    <a href="#"style="color: #000000 !important;margin-right: 20px;"><i class="fa fa-linkedin" ></i> Linkedin</a> </p>
+                </div>
+                
+    
+            </div>
+        </section>
+        <!-- end of footer -->
+
         
 
 
