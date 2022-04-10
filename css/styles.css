@@ -197,5 +197,35 @@ color: #1E90FF;
   line-height: 25px;
 }
 
+@media only screen and (max-width: 980px)
+{
+    .footer img
+    {
+      margin-bottom: 30px;
+      margin-left: 60px;
+      margin-right: 40px;
+    }  
+    .footer .row .col-md-3  p
+    {
+        font-size: 18px;
+        text-align: justify;
+        margin-left: 60px;
+        margin-right: 40px;
+    }
+    .card{
+      width: 100%;
+    }
 
+    #program_dev{
+      padding-bottom: 50px;
+    }
+    .partners
+    {
+      width: fit-content;
+    }
+    #Value-prop
+    {
+      width: 100%;
+    }
+}
   
