@@ -12,6 +12,30 @@
     line-height: 22px;
 
   }
+
+  .navbar-nav   li a:hover
+{ 
+    color: #1E90FF!important; 
+}
+
+  .navbar-brand img
+  {
+      height: 50px;
+      padding-left: 20px;
+      padding-right: 100px;
+     
+  }
+
+
+  .navbar-nav li {
+    float: right !important;
+    text-align: left !important;
+    padding-right: 70px;
+}
+.navbar-toggler
+{
+    border: none !important;
+}
   #cta
   {
     display: flex;
@@ -199,7 +223,22 @@ color: #1E90FF;
 
 @media only screen and (max-width: 980px)
 {
-    .footer img
+  .navbar-brand img
+  {
+      height: 50px;
+      padding-left: 0px;
+      
+     
+  } 
+
+  .image-container{
+    width: 100%;
+  }
+  .nav-link
+    {
+        width: 100%;
+    } 
+  .footer img
     {
       margin-bottom: 30px;
       margin-left: 60px;
@@ -216,9 +255,6 @@ color: #1E90FF;
       width: 100%;
     }
 
-    #program_dev{
-      padding-bottom: 50px;
-    }
     .partners
     {
       width: fit-content;
@@ -228,4 +264,5 @@ color: #1E90FF;
       width: 100%;
     }
 }
+
   

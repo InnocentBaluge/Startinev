@@ -24,6 +24,7 @@
         <link href="css/styles.css" rel="stylesheet">
         <!--Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <!--fonts awesome-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,48 +32,51 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      
+    </head>  
     <body>
         <!--Navigation bar------------>
-        <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+
+        <section id="nav-bar">
             <div class="container">
-
-                <!-- Image Logo -->
-                <a class="navbar-brand logo-image" href="index.html"><img src="images/Logo.png" alt="Startinev logo"></a> 
-
-                <!-- Text Logo - Use this if you don't have a graphic logo -->
-
-                <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand" href="#"><img src="images/Logo.png"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                    <ul class="navbar-nav ms-auto navbar-nav-scroll">
-                        
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item ">
-                            <a class="nav-link  links" href="#" aria-expanded="false">Home</a>
+                        <a class="nav-link " href="#">Home </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About us
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#faq">FAQ</a>
+                            <a class="dropdown-item" href="#">Our team</a>
+                            <div class="dropdown-divider"></div>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link links" target="_blank" href="#">About us</a>
+                        <a class="nav-link" href="#">Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link links" target="_blank" href="#">Events</a>
+                        <a class="nav-link" href="#">Community</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link links" target="_blank" href="#">Community</a>
-                        </li>
+                    </li>
                         <li class="nav-item">
                             <a class="btn btn-primary" href="#" id="join_us" 
-                            style="color: white !important; font-family: 'Open Sans'; font-style: normal;font-weight: 500;background: #1E90FF;padding: 10px;width: 150px;
-                            height: 42px;border-radius: 8px;">
-                            Get in touch
-                        </a>
-                        </li>
-
+                                style="color: white !important; font-family: 'Open Sans'; font-style: normal;font-weight: 500;background: #1E90FF;padding: 10px;width: 230px;
+                                height: 42px;border-radius: 8px;">
+                                Get in touch
+                            </a>
+                    </li>                    
                     </ul>
-                </div> <!-- end of navbar-collapse -->
-            </div> <!-- end of container -->
-        </nav> <!-- end of navbar -->
+                    </div>
+                </nav>
+            </div>
+        </section>
         <!--------------------------------------->
         <div class="container" >
             <div class="row">
@@ -100,7 +104,7 @@
                     </div> <!-- end of image-container -->
                 </div><!--end of col-->
 
-                <div class="partners" > 
+                <div class="partners" style="align-items: center;" > 
                     <p class="" style="font-family: 'Open Sans';font-size: 18px; color: #122742;">Our Partners:</p>
                     <div class="row images">
                         <img src="images/Hindsight.png" style="height: 41px;width: 139px;" onClick="window.open('https://hindsightventures.co/')" class="col-lg-1" alt="Hindsight ventures logo">
@@ -116,13 +120,13 @@
         <div id="Value-prop" class="cards-1">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-md-3">
                         <h2 class="h2-heading develop_text">Our Services</h2>
                     </div> <!-- end of col -->
                     <div class="col-lg-9 ">
                         <div class="row value-prop">
                             <!-- Card -->
-                            <div class="card col-lg-3" id="card1">
+                            <div class="card col-md-3" id="card1">
                                 <div class="card-icon">
                                     <img src="images/calendar.svg" height="60px" width="60px" alt="Hackathons"/>
                                 </div>
@@ -133,7 +137,7 @@
                             <!-- end of card -->
 
                             <!-- Card -->
-                            <div class="card col-lg-3" id="card2">
+                            <div class="card col-md-3" id="card2">
                                 <div class="card-icon">
                                     <img src="images/bulb.svg" height="60px" width="60px" alt="Program development"/>
                                 </div>
@@ -172,14 +176,9 @@
                 <div class="col-lg-6 col-xl-6">
                     <div class="text-container">
                         <h2 class="section_header mobile_text">Events</h2>
-                        <p class="events"> Startinev engages with start-ups by hosting a competition for local entrepreneurs. This
-                            often opens the door to collaborating with the winners. This is done through recruitment,
-                            incubating, acquisition, etc. <br>Hackathons are a creative way to crowdsource ideas and
-                            solutions for the business. When the corporate identifies a problem and does&#39t have a well
-                            defined solution or when there is a major insight on an idea but do not have a full fledged
-                            vision for the product, crowdsourcing is a great solution to this.
-                            Startinev therefore works with you to activate innovation in your organisation through a
-                            tailored approach to the problems you seek to solve.</p> 
+                        <p class="events"> At Startinev,  we are ever on the go mode to create and build solutions aimed 
+                            at solving our challenges through competitions, discussion forums and hackathons. 
+                            Some create a social impact, some become businesses and some ensure sustainability</p> 
                         <a href="#" style="font-family: 'Open Sans'; font-style: normal;font-weight: 600;">
                             Learn more >>
                         </a>                
@@ -191,15 +190,14 @@
 
 
         <div class="container">
-            <div class="row" id="program_dev">
+            <div class="row" id="events_section" style="margin-top: 50px;">
+
                 <div class="col-lg-6 col-xl-6">
                     <div class="text-container">
                         <h2 class="section_header mobile_text">Program Development</h2>
-                        <p class="events"> Corporates have a range of tools to accelerate a start-up&#39s growth. Financial support is only
-                            one of these tools. These organisations can also support start-ups with customer acquisition and market insights, brand exposure and trust, advisory and mentoring, and providing access to customer touchpoints, mass communication, and payments channels.
-                            Startinev will work with you to identify the tools necessary to achieve your organisational
-                            goals through collaboration with startups. This can be through development of programs to
-                            ehance a capture value from the startup ecosystem.</p> 
+                        <p class="events">As the seedlings naturally grow and become trees, Startups also need to develop
+                             to become SMEs and later on Corporates. Startinev makes it possible for Startups to develop by providing 
+                             them with necessary tools and networks to achieve this objective. </p> 
                         <a href="#" style="font-family: 'Open Sans'; font-style: normal;font-weight: 600;">
                             Learn more >>
                         </a>                
@@ -215,6 +213,7 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
 
+
         <div class="container">
             <div class="row" id="events_section">
                 <div class="col-lg-6 col-xl-6 desktop">
@@ -225,10 +224,9 @@
                 <div class="col-lg-6 col-xl-6">
                     <div class="text-container">
                         <h2 class="section_header mobile_text">Community Building</h2>
-                        <p class="events"> At the heart of Startinev is the community of enterpreneurs, partners and stakeholders within
-                            the ecosystem. We have created a vibrant network which can democratize ideas for the benefit of current and future generations of entrepreneurs in Africa.
-                            Our vision is to build an active startup community of 1000 startups and ecosystem partners
-                            within 5 years, driving value and supporting job creation in the region.
+                        <p class="events">The value of community is at the heart of Startinev, we seek to create a 
+                            synergy amongst our entrepreneurs and partners. This synergy targets to create opportunities 
+                            for the betterment of different communities and create value to each member.
                             </p> 
                         <a href="#" style="font-family: 'Open Sans'; font-style: normal;font-weight: 600;">
                             Learn more >>
@@ -318,8 +316,8 @@
                 <div class="text-center">
                     <p id="socials"><a href="#" style="color: #000000 !important;margin-right: 20px;"><i class="fa fa-facebook-official" ></i> Facebook</a>
                     <a href="#" style="color: #000000 !important;margin-right: 20px;"><i class="fa fa-instagram" ></i> Instagram</a>
-                    <a href="#" style="color: #000000 !important;margin-right: 20px;"><i class="fa fa-twitter" ></i> twitter</a>
-                    <a href="#"style="color: #000000 !important;margin-right: 20px;"><i class="fa fa-linkedin" ></i> Linkedin</a> </p>
+                    <a href="#" style="color: #000000 !important;margin-right: 20px;"><i class="fa fa-twitter" ></i> Twitter</a>
+                    <a href="#" style="color: #000000 !important;margin-right: 20px;"><i class="fa fa-linkedin" ></i> LinkedIn</a> </p>
                 </div>
                 
     
@@ -333,5 +331,4 @@
 
       
     </body>
-  </head>
 </html>
