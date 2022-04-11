@@ -83,6 +83,13 @@
     color: #122742;
     
   }
+
+  .cards {
+    margin-top: 50px;
+  }
+ .h2-heading{
+   text-align: center;
+ }
   #card1
   {
     width: 243px;
@@ -272,11 +279,26 @@ color: #1E90FF;
     left: 0px;
     width: 100%;
   }
+  
+  /*#card2
+  {
+    width: 243px;
+    height: 230px;
+    left: 50.98px;
+    top: 0px;
+    align-items: center;
+    padding-left: 20px;
+    background: rgba(177, 179, 182, 0.25);
+    border: 1px solid #4392F1;
+    box-sizing: border-box;
+    border-radius: 8px
+  }*/
     
   #card2
   {
     left: 0px;
     width: 100%;
+
   }
 
   #card3
