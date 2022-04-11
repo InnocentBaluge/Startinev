@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
 
   .nav-item{
@@ -85,7 +85,7 @@
   }
   #card1
   {
-    width: 243.05px;
+    width: 243px;
     height: 230px;
     left: 10px;
     top: 0px;
@@ -99,7 +99,7 @@
 
   #card2
   {
-    width: 243.05px;
+    width: 243px;
     height: 230px;
     left: 50.98px;
     top: 0px;
@@ -113,7 +113,7 @@
 
   #card3
   {
-    width: 243.05px;
+    width: 243px;
     height: 230px;
     left: 83.95px;
     top: 0px;
@@ -223,21 +223,82 @@ color: #1E90FF;
 
 @media only screen and (max-width: 980px)
 {
+
   .navbar-brand img
   {
-      height: 50px;
-      padding-left: 0px;
-      
      
-  } 
+      padding-left: 10px;
+      padding-right: 0px;
+     
+  }
+  .hero_section .text-container{
+    margin-top: 30px !important;
+  }  
+  .hero_section .btn{
+    width: 100% !important;
+    margin: auto;
+  }
 
-  .image-container{
+  .hero_section p {
+    
+    font-size: 14px !important;
+  }
+
+  .hero_section h2 {
+    
+    font-size: 38px !important;
+  }
+
+  .hero_section img{
+    width: 100%;
+    left: 0px;
+  }
+  .cards .col-md-4{
+    margin-top: 30px;
+  }
+  
+ .cards .col-md-8{
+   align-items:center;
+
+ }
+  .cards .col-md-3
+  {
+    align-items: center !important;
+    margin-top: 20px;
     width: 100%;
   }
-  .nav-link
-    {
-        width: 100%;
-    } 
+  #card1
+  {
+    left: 0px;
+    width: 100%;
+  }
+    
+  #card2
+  {
+    left: 0px;
+    width: 100%;
+  }
+
+  #card3
+  {
+    left: 0px;
+    width: 100%;
+   
+  }
+
+  #community
+  {
+  
+  font-size: 40px;
+  
+  }
+
+  form .btn
+  {
+    width: 200px !important;
+  }
+  
+ 
   .footer img
     {
       margin-bottom: 30px;
@@ -251,18 +312,14 @@ color: #1E90FF;
         margin-left: 60px;
         margin-right: 40px;
     }
-    .card{
-      width: 100%;
+    .footer .col-md-3{
+      margin-bottom: 20px;
+
     }
 
-    .partners
-    {
-      width: fit-content;
-    }
-    #Value-prop
-    {
-      width: 100%;
-    }
+
+   
+    
 }
 
   
